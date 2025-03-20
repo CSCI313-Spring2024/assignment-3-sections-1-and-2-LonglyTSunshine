@@ -1,3 +1,13 @@
-<h2>{{ housingLocation.name }}</h2>
-<p>{{ housingLocation.city }}, {{ housingLocation.state }}</p>
-<img [src]="housingLocation.photo" alt="House Image" />
+<section class="listing">
+    <img
+      class="listing-photo"
+      [src]="housingLocation.photo"
+      alt="Exterior photo of {{ housingLocation.name }}"
+      crossorigin
+    />
+    <h5 class="listing-heading">{{ housingLocation.name }}</h5>
+    <p class="listing-location">
+      {{ housingLocation.city }}, {{ housingLocation.state }}
+    </p>
+  </section>
+  
